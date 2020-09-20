@@ -26,7 +26,7 @@ app.post("/", function(req, res){
 
 
     const jsonData = JSON.stringify(data);
-    const  url = "https://us2.api.mailchimp.com/3.0/lists/4b31e4f0a3ffff"
+    const  url = "https://us2.api.mailchimp.com/3.0/lists/4b31e4f0a3"
 
     const options = {
         method: 'POST',
@@ -61,7 +61,7 @@ app.post('/failure', function(req, res){
     res.redirect("/");
 })
 
-app.listen(3000 || process.env.PORT, function(req, res){
+app.listen(process.env.PORT || 3000, function(req, res){
     console.log("Sever started on port 3000");
 });
 
